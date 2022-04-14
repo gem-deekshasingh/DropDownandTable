@@ -22,8 +22,8 @@ public class MouseEvent {
         Thread.sleep(4000);
         WebElement k=driver.findElement(By.name("lastname"));
         k.sendKeys("v");
-        driver.findElement(By.name("reg_email__")).sendKeys("6396577892");
-        WebElement s=driver.findElement(By.name("reg_passwd__"));
+        driver.findElement(By.xpath("//*[@id=\"u_6_g_UD\"]")).sendKeys("6396577892");
+        WebElement s=driver.findElement(By.xpath("//*[@id=\"password_step_input\"]"));
         action.contextClick(s).sendKeys(Keys.DOWN).perform();
 
     }
